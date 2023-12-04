@@ -1,0 +1,35 @@
+<style>
+    .box:hover{
+        transform: scale(1.1);
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+    .box{
+        transition: margin-top 0.2s linear os, 
+        margin-left 0.2s linear 0s,
+        transform 0.2s linear 0s;
+    box-shadow: 2px 2px 36px 2px aqua;
+    width: 200px;
+    height: 200px;
+    border: 1px solid aqua;
+    background-color: blueviolet;
+    text-align: center;
+    font-style: oblique;
+    font-size: larger;
+    border: solid yellow;
+    
+}
+
+     #parent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+     }
+</style>
+
+ <div id="parent">
+    <div class="box">My</div>
+    <div class="box">Name</div>
+    <div class="box">IS</div>
+    <div class="box">Awais</div>
+</div>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @font-face {
+        font-family: roboto-bold;
+        src: url(assets/fonts/Roboto-Bold.ttf);
+      }
+      @font-face {
+        font-family: roboto;
+        src: url(assets/fonts/Roboto-Regular.ttf);
+      }
+      body {
+        background-color: rgb(57, 57, 57);
+        font-family: roboto;
+      }
+      #main {
+        background-color: whitesmoke;
+        margin: auto;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+
+        width: 600px;
+        height: 400px;
+        border-radius: 25px;
+        position: absolute;
+      }
+
+      .sub {
+        height: 100%;
+        display: inline-block;
+        width: 100%;
+        vertical-align: bottom;
+        padding-left: 26px;
+        position: relative;
+        top: 30px;
+      }
+      .part {
+        width: 58%;
+        display: inline-block;
+        height: 100%;
+      }
+      h1 {
+        font-family: roboto-bold;
+      }
+      #p2 img {
+        width: 100%;
+      }
+      #p2 {
+        width: 41%;
+        position: absolute;
+        top: 21px;
+      }
+      .icon {
+        width: 15px;
+        padding-right: 15px;
+        vertical-align: middle;
+      }
+      ol {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0.8em;
+        line-height: 19px;
+        margin-bottom: 16px;
+      }
+      .button {
+        width: 82%;
+        background-color: darkblue;
+        color: white;
+        position: relative;
+        top: 25px;
+      }
+      .input {
+        width: 80%;
+        position: relative;
+        top: 14px
+      }
+
+      /* #main:nth-child(1) {
+        width: 59%;
+      }
+      #main:nth-child(2) {
+        width: 41%;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="part">
+        <div id="p1" class="sub">
+          <h1>stay updated!</h1>
+          <p>join 60,000+ product managers receiving monthly updates on</p>
+          <ol>
+            <li>
+              <img
+                class="icon"
+                src="assets/images/icon-list.svg"
+                alt=""
+              />product discovery and building what matters
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="assets/images/icon-list.svg"
+                alt=""
+              />measuring to ensure updates are a success
+            </li>
+            <li>
+              <img class="icon" src="assets/images/icon-list.svg" alt="" />and
+              much more!
+            </li>
+          </ol>
+
+          Email address <br />
+
+          <input class="input" type="email" />
+
+          <br />
+
+          <button class="button">subscribe to new monthly newsletter</button>
+        </div>
+      </div>
+      <div id="p2" class="part">
+        <img src="c:\Users\Hassan Laptop Point\Pictures\active-states.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

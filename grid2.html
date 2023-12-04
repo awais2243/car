@@ -1,0 +1,73 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #main{
+        gap: 5px;
+        height: 95vh;
+        width: 90vw;
+        display: grid;
+        grid-template: "c1 c1 c1"
+                        "c2 c3 c4"
+                        "c5 c5 c5";
+    }
+    .body:nth-child(1){
+        background-color: blue;
+        grid-area: c1;
+
+    }
+    .body:nth-child(2){
+        background-color: aqua;
+        grid-area: c2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .body:nth-child(3){
+        background-color: yellow;
+        grid-area: c3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body:nth-child(4){
+        background-color: red;
+        grid-area: c4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body:nth-child(5){
+        background-color: rgb(43, 226, 55);
+        grid-area: c5;
+    }
+    #circle{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 50px;
+        display: flex;
+        background-color: rgb(244, 167, 180);
+    }
+
+</style>
+
+
+
+<div id="main">
+    <div class="body"></div>
+    <div class="body">
+        <div id="circle"></div>
+    </div>
+    <div class="body">
+        <div id="circle"></div>
+    </div>
+    <div class="body">
+        <div id="circle"></div>
+    </div>
+    <div class="body"></div>
+
+</div>

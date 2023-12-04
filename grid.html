@@ -1,0 +1,31 @@
+<style>
+     *{
+        margin: 0;
+        padding: 0;
+     }
+     #body{
+        gap: 10px;
+        width: 90vw;
+        height: 100vh;
+        display: grid;
+       grid-template: "c1 c2 "
+                      "c1 c3";
+     }
+     .box:nth-child(1){
+        grid-area: c1;
+        background-color: aqua;
+     }
+     .box:nth-child(2){
+        grid-area: c2;
+        background-color: blue;
+     }
+     .box:nth-child(3){
+        grid-area: c3;
+        background-color: greenyellow;
+     }
+</style>
+<div id="body">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
